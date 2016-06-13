@@ -41,7 +41,7 @@ var app = {
         console.log('calling push init');
         var push = PushNotification.init({
             "android": {
-                "senderID": "918405958552"
+                "senderID": "381951638177"
             },
             "ios": {
                 "sound": true,
@@ -68,6 +68,7 @@ var app = {
 
             listeningElement.setAttribute('style', 'display:none;');
             receivedElement.setAttribute('style', 'display:block;');
+            receivedElement.innerHTML = oldRegId;
         });
 
         push.on('error', function(e) {
