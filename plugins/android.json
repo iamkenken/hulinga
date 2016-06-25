@@ -23,7 +23,7 @@
             "PACKAGE_NAME": "org.hulinga.app"
         },
         "phonegap-plugin-push": {
-            "SENDER_ID": "XXXXXXX",
+            "SENDER_ID": "306256784230",
             "PACKAGE_NAME": "org.hulinga.app"
         }
     },

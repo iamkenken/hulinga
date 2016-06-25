@@ -16,10 +16,16 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <gap:plugin name="phonegap-plugin-push" source="npm" spec="~1.6.2">
+        <params>
+            <param name="SENDER_ID" value="306256784230" />
+        </params>
+    </gap:plugin>
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="StatusBarBackgroundColor" value="#ee6e73" />
     <preference name="StatusBarStyle" value="blacktranslucent" />
+    <preference name="android-build-tool" value="gradle" />
     <preference name="phonegap-version" value="cli-6.1.0" />
 </widget>
