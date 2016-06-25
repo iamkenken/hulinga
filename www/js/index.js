@@ -65,10 +65,11 @@ var app = {
             var parentElement = document.getElementById('registration');
             var listeningElement = parentElement.querySelector('.waiting');
             var receivedElement = parentElement.querySelector('.received');
+            var showRegId = parentElement.querySelector('.regid');
 
             listeningElement.setAttribute('style', 'display:none;');
             receivedElement.setAttribute('style', 'display:block;');
-            receivedElement.innerHTML = data.registrationId;
+            showRegId.innerHTML = data.registrationId;
         });
 
         push.on('error', function(e) {
